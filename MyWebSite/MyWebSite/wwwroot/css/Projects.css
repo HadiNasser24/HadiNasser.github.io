@@ -1,0 +1,198 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+}
+
+.services-section {
+    background: url(../images/keyboard.jpg) repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.title h1 {
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.title:hover h1 {
+    color: cyan;
+    transform: scaleX(1.1);
+}
+
+.title:hover .border {
+    background: white;
+    width: 250px;
+}
+
+.border {
+    width: 160px;
+    height: 2px;
+    background: cyan;
+    margin: 30px auto;
+    transition: 0.3s;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box {
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+    .service-box a {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+    }
+
+
+    .service-box i {
+        color: cyan;
+        font-size: 26px;
+    }
+
+    .service-box:hover .service-icon {
+        width: 85px;
+        background: cyan;
+        color: white;
+    }
+
+.service-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 4px solid white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .service-title:hover {
+        transform: scaleX(1.1);
+    }
+
+.service-desc {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 200px
+}
+
+    ul li {
+        list-style: none;
+        border-top: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        transition: 0.5s;
+    }
+
+        ul li:hover {
+            transform: translateX(25px);
+        }
+
+        ul li a {
+            display: block;
+            border-right: 1px solid #262626;
+            text-decoration: none;
+            color: #262626;
+        }
+
+            ul li a span {
+                position: relative;
+                display: block;
+            }
+
+                ul li a span:nth-child(1) {
+                    width: 55px;
+                    text-align: center;
+                    border-left: 1px solid #262626;
+                    border-right: 1px solid #262626;
+                    padding: 10px;
+                    transition: 0.5s;
+                    color: #262626;
+                }
+
+        ul li:hover a span:nth-child(1) {
+            background: #f44336;
+        }
+
+        ul li a span:nth-child(1) .fas {
+            transition: 0.5s;
+        }
+
+        ul li:hover a span:nth-child(1) .fas {
+            transform: rotateY(360deg);
+            color: #fff;
+        }
+
+        ul li a span:nth-child(2) {
+            text-align: center;
+            padding: 10px;
+        }
+
+.images {
+    border-bottom: 2px solid cyan;
+    margin-bottom: 30px;
+}
+
+.menu {
+    position: relative;
+    float: center;
+    transition: 0.7s;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 25%;
+    width: 300px;
+    height: 290px;
+    transition: 0.3s;
+}
+
+    img:hover {
+        border-radius: 0%;
+        transform: scaleX(1.1);
+    }
+
+@media screen and (max-width:960px) {
+    .service-box {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .service-box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .service-box {
+        max-width: 100%;
+    }
+}

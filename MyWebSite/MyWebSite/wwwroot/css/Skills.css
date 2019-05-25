@@ -1,0 +1,142 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+}
+
+.services-section {
+    background: url(../images/keyboard.jpg) no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.title h1 {
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.title h2 {
+    text-align: center;
+    color: #ddd;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.title:hover h1 {
+    color: cyan;
+    transform: scaleX(1.1);
+}
+
+.title:hover .border {
+    background: white;
+    width: 250px;
+}
+
+.border {
+    width: 160px;
+    height: 2px;
+    background: cyan;
+    margin: 30px auto;
+    transition: 0.3s;
+}
+
+.container {
+    position: relative;
+    font-style: italic;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+    .container h1 {
+        width: 220px;
+        color: white;
+        border-bottom: 2px solid cyan;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container p {
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .container .skills {
+        position: relative;
+        padding: 15px 20px;
+        background: rgba(0,0,0,.15);
+        margin: 10px 0;
+        border: 1px solid rgba(255,255,255,0.1);
+        box-shadow: inset 0 0 25px rgba(0,0,0,.5);
+    }
+
+        .container .skills h3 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            float: left;
+        }
+
+        .container .skills .percent {
+            float: right;
+            color: #fff;
+        }
+
+        .container .skills .bar {
+            position: relative;
+            width: 100%;
+            height: 2px;
+            background: #7f8c8d;
+            margin: 15px 0 10px;
+            transition: 0.2s;
+        }
+
+            .container .skills .bar .progress {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 87%;
+                height: 100%;
+                background: cyan;
+            }
+
+        .container .skills:hover .bar {
+            transform: scale(1.04);
+        }
+
+        .container .skills .bar .progress:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 25px cyan;
+        }
+
+
+
+@media screen and (max-width:960px) {
+}
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:480px) {
+}

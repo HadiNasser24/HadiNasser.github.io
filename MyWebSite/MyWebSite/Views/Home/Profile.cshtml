@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/Profile.css">
+
+</head>
+<body>
+    <div class="services-section">
+        <div class="inner-width">
+            <div class="title">
+
+                <h1 class="section-title">Profile</h1>
+                <div class="border"></div>
+            </div>
+
+            <div class="middle slideInRight animated">
+                <div class="sm-container">
+                    <i class="show-btn fas fa-user"></i> <span style="color:white;font-weight:bold;">Socials</span>
+                    <div class="sm-menu">
+                        <a href="https://www.facebook.com/profile.php?id=100007525897366"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hadi_nasser77/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/HadiNas96216691?lang=en"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile zoomIn animated">
+                <img src="../images/me2.jpg" class="box-img" />
+                <h1 class="zoomIn animated">HadiNasser</h1>
+                <h3 class="zoomIn animated">Computer Science Specialist</h3>
+
+                <p>You might not think that programmers are artists, but programming is an extremely creative profession. It's logic based creativity</p>
+                <div class="education">
+
+
+                    <div class="title zoomIn animated">
+                        Education
+                    </div>
+                    <div class="school zoomIn animated delay-1s">
+                        <div class="schooltitle">
+                            <i class="fas fa-school" style="font-size:30px;"></i>  Al-Nahda School
+                        </div>
+                        <div class="date">
+                            <p>- from grade one -- to grade six</p>
+                        </div>
+                    </div>
+                    <div class="school zoomIn animated delay-2s">
+                        <div class="schooltitle">
+                            <img src="../images/school1.png" alt=""> My New Collage
+                        </div>
+                        <div class="date">
+                            <p>- from grade seven -- to grade nine</p>
+                            <p>- Bachelor of Life Science</p>
+
+                        </div>
+                    </div>
+                    <div class="school zoomIn animated delay-3s">
+                        <div class="schooltitle">
+                            <img src="../images/school2.jpg" alt="" style="height:60px;"> Hussein Maktabe High School
+                        </div>
+                        <div class="date">
+
+                            <p>- from grade ten -- to grade eleven</p>
+
+                        </div>
+                    </div>
+                    <div class="school zoomIn animated delay-4s">
+                        <div class="schooltitle">
+                            <img src="../images/uni.png" alt=""> Lebanese University-Faculty of Sciences
+                        </div>
+                        <div class="date">
+                            <p>- Bachelor of Science in Computer Sciences</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+      $(".services-section").ripples({
+        resolution:400,
+        perturbance:0.003,
+      });
+    </script>
+    <script>
+      $(".show-btn").click(function(){
+        $(".sm-menu").fadeToggle("fast");
+      });
+    </script>
+</body>
+</html>

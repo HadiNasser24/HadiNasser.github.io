@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/Home.css">
+
+</head>
+<body>
+    <div class="services-section">
+        <div class="inner-width">
+            <div class="title">
+                <h1 class="section-title">Welcome</h1>
+                <h2 class="section-title">Home</h2>
+                <div class="border"></div>
+            </div>
+            <div class="services-container">
+
+                <div class="service-box zoomIn animated">
+                    <a asp-action="Profile" asp-controller="Home">
+                        <div class="service-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </a>
+                    <div class="service-title">Profile</div>
+                    <div class="service-desc">
+                        Information about me , My education journey , My hobbies
+                    </div>
+                </div>
+
+                <div class="service-box zoomIn animated delay-1s">
+                    <a asp-action="Skills" asp-controller="Home">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                </div>
+                        </a>
+                    <div class="service-title">Coding Skills</div>
+                    <div class="service-desc">
+                        Skills that i have wide knowledge in and improving everyday
+                    </div>
+                </div>
+
+                <div class="service-box zoomIn animated delay-2s">
+                    <a asp-action="Projects" asp-controller="Home">
+                        <div class="service-icon">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                    </a>
+                    <div class="service-title">Latest Projects</div>
+                    <div class="service-desc">
+                        A small preview about my latest projects and works
+                    </div>
+                </div>
+
+
+                <div class="service-box zoomIn animated delay-3s">
+                    <a asp-action="Contact" asp-controller="Home">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </a>
+                    <div class="service-title">Contact</div>
+                    <div class="service-desc">
+                        Send me a message to my email and share me your thoughts
+                    </div>
+                </div>
+
+                <div class="service-box zoomIn animated delay-4s">
+                    <a asp-action="Gallery" asp-controller="Home">
+                        <div class="service-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                    </a>
+                    <div class="service-title">Gallery</div>
+                    <div class="service-desc">
+                        A list of my own images
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".services-section").ripples({
+            resolution: 400,
+            perturbance: 0.003,
+        });
+    </script>
+</body>
+</html>
