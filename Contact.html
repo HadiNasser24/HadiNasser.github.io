@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style media="screen">
+      *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url(images/code121.jpg) no-repeat center;
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.title h1{
+  text-align: center;
+  color: white;
+
+  text-transform: uppercase;
+  font-size: 40px;
+  transition:0.3s;
+}
+.title h2{
+  text-align: center;
+  color: #ddd;
+  margin-top:20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  transition:0.3s;
+}
+.title:hover h1{
+  color:cyan;
+  transform: scaleX(1.1);
+}
+.title:hover h2{
+  color:cyan;
+  font-size:27px;
+}
+.title:hover .border{
+  background:white;
+  width:250px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: cyan;
+  margin: 30px auto;
+  transition:0.3s;
+}
+
+.input {
+            position: relative;
+            width: 80%;
+            margin-left:90px;
+            margin-top: 65px;
+        }
+
+            .input input,
+            .input textarea {
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                background: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2.5px solid white;
+                font-size: 16px;
+                color: white;
+                font-weight: 700;
+                resize: none;
+            }
+            .submit {
+                       margin-top: 20px;
+                       background-color: cyan;
+                       color: white;
+                       padding: 15px 30px;
+                       border: none;
+                       outline: none;
+                       border-radius: 30px;
+                       font-weight: 700;
+                       font-size: 18px;
+                       transition: 0.5s;
+                       float: right;
+                   }
+
+                       .submit:hover {
+                           background-color: darkcyan;
+                           color:white;
+                       }
+
+            .input label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 5px;
+                font-size: 20px;
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: 0.5s;
+            }
+
+
+            .input input:focus,
+            .input input:valid {
+              border-bottom:2.5px solid cyan;
+            }
+            .input input:focus + label,
+            .input input:valid + label {
+                top: -100%;
+                font-size: 18px;
+                padding: 5px 5px;
+                color: cyan;
+                border-radius: 4px;
+            }
+
+            .input textarea:focus,
+            .input textarea:valid{
+              border-bottom:2.5px solid cyan;
+            }
+            .input textarea:focus + label,
+            .input textarea:valid + label {
+                top: -60%;
+                font-size: 18px;
+                padding: 5px 5px;
+                color: cyan;
+                border-radius: 4px;
+            }
+
+
+@media screen and (max-width:960px) {
+  .input{
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .input{
+    max-width: 80%;
+    margin-left:20px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .input{
+    max-width: 80%;
+    margin-left:10px;
+  }
+  .input input,
+  .input textarea{
+    font-size:13px;
+  }
+  .input label{
+    font-size:18px;
+  }
+  .submit{
+    float:center;
+    margin-right:80px;
+  }
+  .border{
+    margin-top:20px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="services-section">
+      <div class="inner-width">
+        <div class="title">
+
+          <h1 class="section-title">Contact</h1>
+          <div class="border"></div>
+        </div>
+
+
+
+
+
+        <div class="wrapper">
+
+              <form action="" method="post">
+                  <div class="input zoomIn animated">
+                      <input type="text" value="" required="" />
+                      <label><i class="fas fa-user-tag"></i> Name</label>
+                  </div>
+
+                  <div class="input zoomIn animated">
+                      <input type="text" value="" required="" />
+                      <label><i class="fas fa-info-circle"></i> Subject</label>
+                  </div>
+
+                  <div class="input zoomIn animated">
+                      <input type="email" value="" required="" />
+                      <label><i class="fas fa-envelope"></i> Email</label>
+                  </div>
+                  <div class="input zoomIn animated">
+                      <textarea required=""></textarea>
+                      <label><i class="fas fa-comment-dots"></i> Message</label>
+                      <span asp-validation-for="about" class="text-danger"></span>
+                  </div>
+
+                  <input type="submit" value="Send" class="submit"/>
+
+              </form>
+          </div>
+
+        </div>
+      </div>
+
+    <script type="text/javascript">
+      $(".services-section").ripples({
+        resolution:200,
+        perturbance:0.003,
+      });
+    </script>
+  </body>
+</html>

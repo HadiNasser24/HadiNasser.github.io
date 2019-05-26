@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style media="screen">
+      *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url(images/code121.jpg) no-repeat center;
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.title h1{
+  text-align: center;
+  color: white;
+
+  text-transform: uppercase;
+  font-size: 40px;
+  transition:0.3s;
+}
+.title h2{
+  text-align: center;
+  color: #ddd;
+  margin-top:20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  transition:0.3s;
+}
+.title:hover h1{
+  color:cyan;
+  transform: scaleX(1.1);
+}
+.title:hover h2{
+  color:cyan;
+  font-size:27px;
+}
+.title:hover .border{
+  background:white;
+  width:250px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: cyan;
+  margin: 30px auto;
+  transition:0.3s;
+}
+
+.gallery{
+	position: relative;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+
+}
+
+.gallery .image{
+	width: 21%;
+	margin: 1%;
+	float: left;
+}
+
+.image img{
+	width: 100%;
+	transition:0.3s all ease;
+	transform: scale(1);
+	border-radius: 30%;
+
+}
+
+.image img:hover{
+	transform: scale(1.15);
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width:1000px) {
+  .gallery .image{
+  	width: 30%;
+  	margin: 1%;
+  	float: left;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .gallery .image{
+    width:40%;
+    float: center;
+    margin: 15px;
+
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery .image{
+    width: 100%;
+    margin: 5%;
+    float: center;
+
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="services-section">
+      <div class="inner-width">
+        <div class="title">
+
+          <h1 class="section-title">Gallery</h1>
+          <div class="border"></div>
+        </div>
+
+        <div class="gallery">
+        			<div class="image zoomIn animated">
+        				<img src="images/4.jpg" />
+        			</div>
+
+        			<div class="image zoomIn animated">
+        				<img src="images/5.jpg"/>
+        			</div>
+
+        			<div class="image zoomIn animated">
+        				<img src="images/6.jpg"/>
+        			</div>
+
+        			<div class="image zoomIn animated">
+        				<img src="images/7.jpg"/>
+        			</div>
+
+        			<div class="image zoomIn animated">
+        				<img src="images/11.jpg"/>
+        			</div>
+
+        			<div class="image zoomIn animated">
+        				<img src="images/9.jpg"/>
+        			</div>
+        			<div class="image zoomIn animated">
+        				<img src="images/10.jpg"/>
+        			</div>
+        			<div class="image zoomIn animated">
+        				<img src="images/8.jpg"/>
+        			</div>
+
+
+
+        </div>
+      </div>
+
+    <script type="text/javascript">
+      $(".services-section").ripples({
+        resolution:200,
+        perturbance:0.003,
+      });
+    </script>
+  </body>
+</html>

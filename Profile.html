@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style media="screen">
+      *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url(images/code121.jpg) no-repeat center;
+  background-size: cover;
+  padding: 0px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.title h1{
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+
+  transition:0.3s;
+}
+.title h2{
+  text-align: center;
+  color: white;
+  margin-top:20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  transition:0.3s;
+}
+.title:hover h1{
+  color:cyan;
+  transform:scaleX(1.1);
+}
+.title:hover h2{
+  color:cyan;
+  font-size:27px;
+}
+.title:hover .border{
+  background:white;
+  width:250px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: cyan;
+  margin: 30px auto;
+  transition:0.3s;
+}
+
+.middle{
+  position: absolute;
+  top: 0%;
+  right:2%;
+  display: block;
+}
+
+.sm-container{
+  text-align: center;
+}
+
+.sm-container i{
+  color: #f5f6fa;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sm-container i:hover{
+
+  transform: rotateY(360deg);
+}
+
+.sm-menu{
+    padding: 15px;
+  background: darkcyan;
+  position: absolute;
+  border-radius: 8px;
+  display: none;
+}
+
+.sm-menu::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: darkcyan;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.profile{
+position: relative;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.profile p{
+	font-size: 18px;
+	line-height: 25px;
+  margin-top: 15px;
+	margin-bottom: 40px;
+  color:white;
+  border-radius: 10px;
+    border:2px solid cyan;
+    transition: 0.2s;
+
+}
+.profile p:hover{
+  transform: scale(1.1);
+}
+.Profile h1{
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  color:white;
+  font-weight: bold;
+}
+.profile h3{
+  letter-spacing: 3px;
+	font-weight: 100;
+  color:white;
+
+}
+.box-img{
+	transition: all ease 0.5s;
+	border-radius: 20%;
+	width: 200px;
+	height: 200px;
+  margin-bottom: 10px;
+}
+.box-img:hover{
+	transform: scale(1.1);
+}
+
+.education .title{
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+
+  margin-bottom: 20px;
+  border-bottom:2px solid cyan;
+}
+.education .schooltitle{
+  font-size: 20px;
+  margin-top:10px;
+width: 250px;
+transition: 0.2s;
+border-bottom: 2px solid white;
+}
+.education .schooltitle:hover{
+  transform: scale(1.1);
+}
+ .schooltitle img{
+  width: 70px;
+  border-radius: 50%;
+  transition: 0.2s
+}
+.date img:hover{
+  transform: scale(1.1);
+}
+.date p{
+  border:none;
+width: 250px;
+}
+.date p:hover{
+  transform: scale(1);
+}
+@media screen and (max-width:960px) {
+  .middle{
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .middle{
+    display: block;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .middle{
+    position: absolute;
+    top: 0%;
+    right:2%;
+    display: block;
+  }
+  .middle span{
+    display: none;
+  }
+
+
+  .sm-container i{
+    color: #f5f6fa;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .sm-menu{
+      padding: 5px;
+    background: darkcyan;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+  }
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="services-section">
+      <div class="inner-width">
+        <div class="title">
+
+          <h1 class="section-title">Profile</h1>
+          <div class="border"></div>
+        </div>
+
+        <div class="middle slideInRight animated">
+             <div class="sm-container">
+               <i class="show-btn fas fa-user"></i> <span style="color:white;font-weight:bold;">Socials</span>
+               <div class="sm-menu">
+                 <a href="https://www.facebook.com/profile.php?id=100007525897366"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://www.instagram.com/hadi_nasser77/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://twitter.com/HadiNas96216691?lang=en"><i class="fab fa-twitter"></i></a>
+               </div>
+             </div>
+           </div>
+
+           <div class="profile zoomIn animated">
+             <img src="images/me2.jpg" class="box-img" />
+             <h1 class="zoomIn animated">HadiNasser</h1>
+             <h3 class="zoomIn animated">Computer Science Specialist</h3>
+
+          <p>You might not think that programmers are artists, but programming is an extremely creative profession. It's logic based creativity</p>
+          <div class="education">
+
+
+            <div class="title zoomIn animated">
+              Education
+            </div>
+            <div class="school zoomIn animated delay-1s">
+            <div class="schooltitle">
+            <i class="fas fa-school" style="font-size:30px;"></i>  Al-Nahda School
+            </div>
+            <div class="date">
+              <p>- from grade one -- to grade six</p>
+            </div>
+          </div>
+          <div class="school zoomIn animated delay-2s">
+          <div class="schooltitle">
+            <img src="images/school1.png" alt=""> My New Collage
+          </div>
+          <div class="date">
+            <p>- from grade seven -- to grade nine</p>
+            <p>- Bachelor of Life Science</p>
+
+          </div>
+        </div>
+        <div class="school zoomIn animated delay-3s">
+        <div class="schooltitle">
+          <img src="images/school2.jpg" alt="" style="height:60px;"> Hussein Maktabe High School
+        </div>
+        <div class="date">
+
+          <p>- from grade ten -- to grade eleven</p>
+
+        </div>
+      </div>
+      <div class="school zoomIn animated delay-4s">
+      <div class="schooltitle">
+        <img src="images/uni.png" alt=""> Lebanese University-Faculty of Sciences
+      </div>
+      <div class="date">
+        <p>- Bachelor of Science in Computer Sciences</p>
+
+      </div>
+    </div>
+          </div>
+        </div>
+
+
+</div>
+</div>
+
+
+    <script type="text/javascript">
+      $(".services-section").ripples({
+        resolution:400,
+        perturbance:0.003,
+      });
+    </script>
+    <script>
+      $(".show-btn").click(function(){
+        $(".sm-menu").fadeToggle("fast");
+      });
+    </script>
+  </body>
+</html>
