@@ -32,6 +32,7 @@ body{
   left:40%;
   width: 14px;
   height: 2px;
+  z-index: 2;
 }
 /*5at*/
 .computer span:nth-child(4){
@@ -41,6 +42,7 @@ body{
   left:40%;
   width: 14px;
   height: 2px;
+  z-index: 2;
 }
 /*5at*/
 .computer span:nth-child(5){
@@ -50,6 +52,7 @@ body{
   left:40%;
   width: 14px;
   height: 2px;
+  z-index: 2;
 }
 /*sheshe*/
 .computer span:nth-child(6){
@@ -235,11 +238,107 @@ font-weight: bold;
   }
 }
 @media screen and (max-width:960px) {
+  .computer span:nth-child(1){
+    left:30%;
+  }
+  /*no2ta*/
+  .computer span:nth-child(2){
+    left:75%;
+  }
+  /*5at*/
+  .computer span:nth-child(3){
+    left:31%;
+  }
+  /*5at*/
+  .computer span:nth-child(4){
+    left:31%;
+  }
+  /*5at*/
+  .computer span:nth-child(5){
+    left:31%;
+  }
+  /*sheshe*/
+  .computer span:nth-child(6){
+    left:32.5%;
+  }
+  /*maske*/
+  .computer span:nth-child(7){
+    left:46%;
+  }
+  /*dowayra*/
+  .computer span:nth-child(8){
+    left:38%;
+  }
+  /*dowayra*/
+  .computer span:nth-child(9){
+    left:56%;
+  }
+  /*jowetsheshe*/
+  .computer span:nth-child(10){
+    left:34%;
+  }
+  .computer span:nth-child(11){
+    left:52%;
+  }
+  .computer span:nth-child(12){
+    left:52%;
 
+  }
+  .computer span:nth-child(13){
+    left:46.5%;
+}
 }
 
 @media screen and (max-width:768px) {
+  .computer span:nth-child(1){
+    left:30%;
+  }
+  /*no2ta*/
+  .computer span:nth-child(2){
+    left:75%;
+  }
+  /*5at*/
+  .computer span:nth-child(3){
+    left:31%;
+  }
+  /*5at*/
+  .computer span:nth-child(4){
+    left:31%;
+  }
+  /*5at*/
+  .computer span:nth-child(5){
+    left:31%;
+  }
+  /*sheshe*/
+  .computer span:nth-child(6){
+    left:32.5%;
+  }
+  /*maske*/
+  .computer span:nth-child(7){
+    left:46%;
+  }
+  /*dowayra*/
+  .computer span:nth-child(8){
+    left:38%;
+  }
+  /*dowayra*/
+  .computer span:nth-child(9){
+    left:56%;
+  }
+  /*jowetsheshe*/
+  .computer span:nth-child(10){
+    left:34%;
+  }
+  .computer span:nth-child(11){
+    left:52%;
+  }
+  .computer span:nth-child(12){
+    left:52%;
 
+  }
+  .computer span:nth-child(13){
+    left:46.5%;
+}
 }
 
 @media screen and (max-width:480px) {
@@ -290,14 +389,5 @@ font-weight: bold;
 
   }
   .computer span:nth-child(13){
-    position: absolute;
-    top: 43.5%;
-  opacity: 1;
-  font-family:fantasy;
-  font-weight: bold;
-    color:black;
     left:46.5%;
-    width: 140px;
-    height: 90px;
-
 }
