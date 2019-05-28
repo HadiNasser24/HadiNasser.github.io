@@ -1,0 +1,301 @@
+body{
+  background: cyan;
+}
+
+.computer span:nth-child(1){
+  position: absolute;
+  background:#222f3e;
+  top: 60%;
+  left:40%;
+  width: 170px;
+  height: 25px;
+}
+
+/*no2ta*/
+.computer span:nth-child(2){
+  position: absolute;
+  background: limegreen;
+  top: 61%;
+  left:59%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: green 1.5s linear;
+}
+/*5at*/
+.computer span:nth-child(3){
+  position: absolute;
+  background: black;
+  top: 61%;
+  left:40%;
+  width: 14px;
+  height: 2px;
+}
+/*5at*/
+.computer span:nth-child(4){
+  position: absolute;
+  background: black;
+  top: 62%;
+  left:40%;
+  width: 14px;
+  height: 2px;
+}
+/*5at*/
+.computer span:nth-child(5){
+  position: absolute;
+  background: black;
+  top: 63%;
+  left:40%;
+  width: 14px;
+  height: 2px;
+}
+/*sheshe*/
+.computer span:nth-child(6){
+  position: absolute;
+  background:#222f3e;
+  top: 37%;
+  left:41%;
+  width: 150px;
+  height: 100px;
+  z-index: 1;
+
+}
+/*maske*/
+.computer span:nth-child(7){
+  position: absolute;
+  background:#222f3e;
+  top: 53.1%;
+  left:47%;
+  width: 50px;
+  height: 45px;
+
+}
+/*dowayra*/
+.computer span:nth-child(8){
+  position: absolute;
+  background: cyan;
+  top: 53%;
+  left:51%;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+
+}
+/*dowayra*/
+.computer span:nth-child(9){
+  position: absolute;
+  background: cyan;
+  top: 53%;
+  left:44%;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+
+}
+/*jowetsheshe*/
+.computer span:nth-child(10){
+  position: absolute;
+  top: 37.8%;
+  background:white;
+  left:41.6%;
+  width: 140px;
+  height: 90px;
+  z-index: 1;
+animation: light 1.5s linear;
+}
+.computer span:nth-child(11){
+  position: absolute;
+  top: 38.3%;
+opacity: 1;
+  color:limegreen;
+  left:49%;
+  width: 140px;
+  height: 90px;
+  z-index: 2;
+  animation: code 3s linear;
+}
+.computer span:nth-child(12){
+  position: absolute;
+  top: 49%;
+opacity: 1;
+  color:limegreen;
+  left:49%;
+  width: 140px;
+  height: 90px;
+  z-index: 2;
+  animation: code 3s linear;
+}
+.computer span:nth-child(13){
+  position: absolute;
+  top: 43.5%;
+opacity: 1;
+font-family:fantasy;
+font-weight: bold;
+  color:black;
+  left:46.5%;
+  width: 140px;
+  height: 90px;
+  z-index: 2;
+  animation: text 4s linear;
+}@keyframes text {
+  0%{
+    opacity: 0;
+  }
+  20%{
+      opacity: 0;
+  }
+  30%{
+      opacity: 0;
+  }
+50%{
+    opacity: 0;
+  }
+  60%{
+      opacity: 0;
+  }
+  80%{
+    opacity: 0.2;
+  }
+  90%{
+      opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes code {
+  0%{
+    opacity: 0;
+  }
+  20%{
+      opacity: 0;
+  }
+  30%{
+      opacity: 0;
+  }
+50%{
+    opacity: 0;
+  }
+  60%{
+      opacity: 0;
+  }
+  80%{
+    opacity: 0.2;
+  }
+  90%{
+      opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes light {
+  0%{
+    background: #222f3e;
+  }
+  20%{
+    background: #222f3e;
+  }
+50%{
+    background: #222f3e;
+  }
+  60%{
+    background: #222f3e;
+  }
+  80%{
+    background: #222f3e;
+  }
+  90%{
+    background: white;
+  }
+  100%{
+    background: white;
+  }
+}
+@keyframes green {
+  0%{
+    background: white
+  }
+  20%{
+    background: white
+  }
+50%{
+    background: white
+  }
+  60%{
+    background: limegreen;
+  }
+  80%{
+    background: limegreen;
+  }
+  100%{
+    background: limegreen;
+  }
+}
+@media screen and (max-width:960px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:480px) {
+  .computer span:nth-child(1){
+    left:30%;
+  }
+  /*no2ta*/
+  .computer span:nth-child(2){
+    left:75%;
+  }
+  /*5at*/
+  .computer span:nth-child(3){
+    left:31%;
+  }
+  /*5at*/
+  .computer span:nth-child(4){
+    left:31%;
+  }
+  /*5at*/
+  .computer span:nth-child(5){
+    left:31%;
+  }
+  /*sheshe*/
+  .computer span:nth-child(6){
+    left:32.5%;
+  }
+  /*maske*/
+  .computer span:nth-child(7){
+    left:46%;
+  }
+  /*dowayra*/
+  .computer span:nth-child(8){
+    left:38%;
+  }
+  /*dowayra*/
+  .computer span:nth-child(9){
+    left:56%;
+  }
+  /*jowetsheshe*/
+  .computer span:nth-child(10){
+    left:34%;
+  }
+  .computer span:nth-child(11){
+    left:52%;
+  }
+  .computer span:nth-child(12){
+    left:52%;
+
+  }
+  .computer span:nth-child(13){
+    position: absolute;
+    top: 43.5%;
+  opacity: 1;
+  font-family:fantasy;
+  font-weight: bold;
+    color:black;
+    left:46.5%;
+    width: 140px;
+    height: 90px;
+
+}
