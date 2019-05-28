@@ -9,6 +9,7 @@ body{
   left:40%;
   width: 170px;
   height: 25px;
+  z-index: 1;
 }
 
 /*no2ta*/
@@ -21,6 +22,7 @@ body{
   height: 10px;
   border-radius: 50%;
   animation: green 1.5s linear;
+  z-index: 2;
 }
 /*5at*/
 .computer span:nth-child(3){
