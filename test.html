@@ -1,306 +1,188 @@
-@{
-
-    Layout = "~/Views/Shared/_NurseLayout.cshtml";
-
-}
-@model NursesNotes;
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Century Gothic';
-            background:black;
-        }
 
-        .wrapper {
-            position: absolute;
-            width: 600px;
-            padding: 40px;
-            box-sizing: border-box;
-        }
+    <style media="screen">
+      *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background: #182C61;
+        background-size: cover;
 
-        .title {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            text-align: center;
-            top: -13%;
-            left: 70%;
-            background: cyan;
-            color: white;
-            font-size: 50px;
-            border-radius: 50%;
-            border: 1px solid black;
-            transition: 0.5s ease-in-out;
-        }
+      }
+      .container{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background:transparent;
+        box-sizing: border-box;
+        box-shadow: 0 0 30px rgba(0,0,0,.9);
+        width: 50%;
+        height: 90%;
+      }
+      .container h1{
+        position: absolute;
+        float: center;
+        margin-left: 33%;
+        margin-top: 20px;
+        font-family:Century gothic;
+        color: limegreen;
+        font-weight: bold;
+        transition: 0.3s;
 
-            .title:hover {
-                background: white;
-                color: cyan;
-            }
-
-            .title i {
-                font-size: 100px;
-                text-align: center;
-            }
-
-        .wrapper h2 {
-            color: white;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-            font-size: 30px;
-        }
-
-        .input {
-            position: relative;
-            width: 100%;
-            margin-top: 50px;
-        }
-
-            .input input,
-            .input textarea {
-                width: 100%;
-                padding: 5px;
-                box-sizing: border-box;
-                background: transparent;
-                border: none;
-                outline: none;
-                border-bottom: 2px solid white;
-                font-size: 16px;
-                color: white;
-                font-weight: 700;
-                resize: none;
-
-              }
-
-.wrapper input{
-  position:relative;
-  width:70%;
-  height:40px;
-  padding:5px;
-  margin:5px 200px;
-  border-radius:10px;
-  font-family:century gothic;
-  transition:0.3s linear;
-background:#dcdde1;
-
-}
-input:focus{
-  transform:rotateX(360deg) scale(1.15);
-  border-radius:0;
-  border:2px solid cyan;
-}
-.wrapper button{
-
-  position:absolute;
-  left:56%;
-  width:225px;
-  height:30px;
-  margin-top:30px;
-  border-radius:5px;
-  background:#fbc531;
-  border:none;
-  font-size:16px;
-  font-weight:bold;
-  font-family:century gothic;
-  color:white;
-
-  transition:0.2s;
-}
-
-button i{
-  font-size:22px;
-  float:left;
-  width:40px;
-  height:100%;
-  border-right:2px solid black;
-}
-button:hover{
-  transform:scale(1.1);
-  background:white;
-  color:#fbc531;
-}
-            .input label {
-                position: absolute;
-                top: 0;
-                left: 0;
-                padding: 5px;
-                font-size: 18px;
-                color: white;
-                font-weight: 700;
-                text-transform: uppercase;
-                transition: 0.5s;
-            }
-
-            .input select {
-                width: 100%;
-                padding: 5px;
-                box-sizing: border-box;
-                background: transparent;
-                border: none;
-                outline: none;
-                border-bottom: 2px solid white;
-                font-size: 16px;
-                color: gray;
-                font-weight: 700;
-                resize: none;
-            }
-
-            .input input:focus + label,
-            .input input:valid + label {
-                top: -100%;
-                font-size: 18px;
-                padding: 5px 5px;
-                background: cyan;
-                color: white;
-                border-radius: 4px;
-            }
-
-            .input textarea:focus + label,
-            .input textarea:valid + label {
-                top: -60%;
-                font-size: 18px;
-                padding: 5px 5px;
-                background: cyan;
-                color: white;
-                border-radius: 4px;
-            }
-
-            .input select:focus + label {
-                top: -100%;
-                font-size: 18px;
-                padding: 5px 5px;
-                background: cyan;
-                color: white;
-                border-radius: 4px;
-            }
-
-        .date, .select {
-            top: -100%;
-            font-size: 18px;
-            padding: 5px 5px;
-            background: rgba(52,73,94,0.7);
-            color: white;
-            border-radius: 4px;
-        }
-
-
-        .submit {
-            margin-top: 20px;
-            background-color: cyan;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            outline: none;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 16px;
-            transition: 0.5s;
-            float: right;
-        }
-
-            .submit:hover {
-                background: darkcyan;
-            }
-
-    .patient-info{
-      position:absolute;
-      width:400px;
-      height:500px;
-      border:2px solid black;
-      border-radius:50px;
-      top:60%;
-      left:2%;
-      background:#dcdde1;
-      padding:20px 70px;
-    }
-    .patient-info label{
-    margin-left:20px;
-      font-size:16px;
+      }
+      h1 span{
+        color: white;
+      }
+      h1:hover{
+        transform: scaleX(1.1);
+      }
+      .border{
+    position: absolute;
+    margin-top: 80px;
+        width: 90%;
+        height: 5px;
+        margin-left: 20px;
+  background: limegreen;
+      }
+      .Login{
+        position: relative;
+        margin-top: 20%;
+      }
+    .Login input{
+      width: 70%;
+      height: 60px;
+      padding: 10px;
+      margin: 5% 10%;
+      border-radius: 20px;
+      font-size: 17px;
+      font-weight: bold;
       font-family:Century gothic;
-      font-weight:bold;
-        margin-right:10px;
+      border: 2px solid black;
+      transition: 0.3s;
+        float: center;
+        animation: wide 0.3s;
     }
-    .patient-info input{
+    @keyframes wide {
+      0%{
+        margin-left:0
+      }
+      20%{
+        margin-left:2%;
+      }
+      40%{
+          margin-left:4%;
+      }
+      60%{
+          margin-left:6%;
+      }
+      80%{
+          margin-left:8%
+      }
+      100%{
+          margin-left:10%;
+      }
+    }
+    .Login input[type="submit"]{
+      background: limegreen;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin-left: 35%;
+      animation: fade 0.8s;
+    }
+    .Login input[type="submit"]:hover{
+      transform: scale(1.1);
+      color: limegreen;
+      background: white;
+    }
+    .Login input:hover{
+      transform: scaleX(1.2);
+      border:3px solid limegreen;
+    }
+    @keyframes fade {
+    0%{
+      transform: scale(1);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    80%{
+      transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+    }
+    @media screen and (max-width:960px) {
+      .container{
+        width: 80%;
+      }
+    }
 
-      margin-bottom:15px;
-    width:280px;
-    border:none;
-    background:#dcdde1;
-    border-bottom:1px solid black;
-    transition:0.2s;
-    font-size:15px;
-  font-family:century gothic;
+    @media screen and (max-width:768px) {
+      .input{
+        max-width: 80%;
+        margin-left:20px;
+      }
     }
-  .patient-info h1{
-    font-family:century gothic;
-    font-weight:540;
-    width:350px;
-    font-style:italic;
-    transition:0.2s;
-    border-bottom:2px solid black
-  }
-  .patient-info h1:hover{
-    transform:scale(1.1);
-  }
-    .patient-info input:hover{
-      transform:scale(1.07);
-          font-weight:bold;
+
+    @media screen and (max-width:480px) {
+      .container{
+        width: 80%;
+      }
+      h1{
+        margin-right: 20%;
+
+      }
+      .border{
+        margin-top: 100px;
+      }
+      .Login{
+        margin-top: 30%;
+      }
+      .Login input[type="submit"]{
+        width: 80px;
+        height: 80px;
+      }
+    }
+    @media screen and (max-width:360px) {
+      .Login{
+        margin-top: 50%;
+      }
+
     }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>login <span>Form</span></h1>
+        <div class="border">
+        </div>
+      <div class="Login">
 
-</head>
-<body>
+        <form class="" action="index.html" method="post">
 
-    <div class="wrapper">
-
-
-
-        <form action="~/Admin/AddDoctor" method="post">
-<input type="number" name="" value="" placeholder="ID">
-          <input type="text" name="" value="" placeholder="FirstName">
-          <input type="text" name="" value="" placeholder="LastName">
-<button type="button" name="button"><i class="fas fa-search"></i> Search by Name or ID</button>        
-
+          <input type="text" name="username" value="" placeholder="Username">
+          <input type="password" name="password" value="" placeholder="Password">
+          <input type="submit" name="" value="LOGIN">
         </form>
+
+      </div>
     </div>
-<div class="patient-info">
-  <form class="" action="index.html" method="post">
-    <h1>Personal Information</h1>
-    <label for="">ID:</label>
-    <input type="text" name="" value="">
-    <label for="">FirstName:</label>
-    <input type="text" name="" value="">
-    <label for="">LastName:</label>
-    <input type="text" name="" value="hadi">
-    <label for="">Email:</label>
-    <input type="text" name="" value="">
-    <label for="">Gender:</label>
-    <input type="text" name="" value="">
-    <label for="">BloodType:</label>
-    <input type="text" name="" value="">
-    <label for="">Phone:</label>
-    <input type="text" name="" value="">
-    <label for="">Address:</label>
-    <input type="text" name="" value="">
-    <label for="">birthday:</label>
-    <input type="text" name="" value="">
-    <label for="">Weight:</label>
-    <input type="text" name="" value="">
-    <label for="">Description:</label>
-    <input type="text" name="" value="">
-
-  </form>
-</div>
-
-
-</body>
+  </body>
 </html>

@@ -106,6 +106,7 @@ body{
   width: 140px;
   height: 90px;
   z-index: 1;
+
 animation: light 1.5s linear;
 }
 .computer span:nth-child(11){
