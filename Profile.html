@@ -10,12 +10,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Livvic&display=swap" rel="stylesheet">
+
     <style media="screen">
       *{
   margin: 0;
   padding: 0;
   font-family: Century gothic;
   box-sizing: border-box;
+  font-family: Abel;
 }
 
 .services-section{
@@ -256,7 +261,7 @@ transition: 0.2s;
            </div>
 
            <div class="profile zoomIn animated">
-             <img src="images/me2.jpg" class="box-img" />
+             <img src="images/me1.jpg" class="box-img" />
              <h1 class="zoomIn animated">HadiNasser</h1>
              <h3 class="zoomIn animated">Computer Science Specialist</h3>
 
@@ -264,10 +269,10 @@ transition: 0.2s;
           <div class="education">
 
 
-            <div class="title zoomIn animated">
+            <div class="title">
               Education
             </div>
-            <div class="school zoomIn animated delay-1s">
+            <div class="school" data-aos="fade-down-right" data-aos-delay=150>
             <div class="schooltitle">
             <i class="fas fa-school" style="font-size:30px;"></i>  Al-Nahda School
             </div>
@@ -275,7 +280,7 @@ transition: 0.2s;
               <p>- from grade one -- to grade six</p>
             </div>
           </div>
-          <div class="school zoomIn animated delay-2s">
+          <div class="school" data-aos="fade-down-left" data-aos-delay=150>
           <div class="schooltitle">
             <img src="images/school1.png" alt=""> My New Collage
           </div>
@@ -285,7 +290,7 @@ transition: 0.2s;
 
           </div>
         </div>
-        <div class="school zoomIn animated delay-3s">
+        <div class="school"data-aos="fade-down-right" data-aos-delay=150>
         <div class="schooltitle">
           <img src="images/school2.jpg" alt="" style="height:60px;"> Hussein Maktabe High School
         </div>
@@ -295,11 +300,12 @@ transition: 0.2s;
 
         </div>
       </div>
-      <div class="school zoomIn animated delay-4s">
+      <div class="school" data-aos="fade-down-left" data-aos-delay=150>
       <div class="schooltitle">
         <img src="images/uni.png" alt=""> Lebanese University-Faculty of Sciences
       </div>
       <div class="date">
+        <p>- Graduated in 2019</p>
         <p>- Bachelor of Science in Computer Sciences</p>
 
       </div>
@@ -311,13 +317,15 @@ transition: 0.2s;
 </div>
 </div>
 
-
+<script src="js/aos.js">
+</script>
 
     <script type="text/javascript">
       $(".services-section").ripples({
         resolution:400,
         perturbance:0.003,
       });
+      AOS.init();
     </script>
     <script>
       $(".show-btn").click(function(){

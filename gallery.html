@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
     <style media="screen">
       *{
   margin: 0;
@@ -134,46 +135,58 @@
         </div>
 
         <div class="gallery">
-        			<div class="image zoomIn animated">
+          <div class="image" data-aos="fade-down-right" data-aos-delay=150>
+            <img src="images/me1.jpg" />
+          </div>
+
+          <div class="image"data-aos="fade-down-right" data-aos-delay=150>
+            <img src="images/me4.jpg" />
+          </div>
+        			<div class="image"data-aos="fade-down-left" data-aos-delay=150>
         				<img src="images/4.jpg" />
         			</div>
 
-        			<div class="image zoomIn animated">
+        			<div class="image"data-aos="fade-down-right" data-aos-delay=150>
         				<img src="images/5.jpg"/>
         			</div>
 
-        			<div class="image zoomIn animated">
+        			<div class="image"data-aos="fade-down-left" data-aos-delay=150>
         				<img src="images/6.jpg"/>
         			</div>
 
-        			<div class="image zoomIn animated">
+        			<div class="image "data-aos="fade-down-right" data-aos-delay=150>
         				<img src="images/7.jpg"/>
         			</div>
 
-        			<div class="image zoomIn animated">
+        			<div class="image"data-aos="fade-down-left" data-aos-delay=150>
         				<img src="images/11.jpg"/>
         			</div>
 
-        			<div class="image zoomIn animated">
+        			<div class="image"data-aos="fade-down-right" data-aos-delay=150>
         				<img src="images/9.jpg"/>
         			</div>
-        			<div class="image zoomIn animated">
+        			<div class="image"data-aos="fade-down-left" data-aos-delay=150>
         				<img src="images/10.jpg"/>
         			</div>
-        			<div class="image zoomIn animated">
+        			<div class="image"data-aos="fade-down-right" data-aos-delay=150>
         				<img src="images/8.jpg"/>
         			</div>
-
+              <div class="image" data-aos="fade-down-left" data-aos-delay=150>
+                <img src="images/me3.jpg" />
+              </div>
 
 
         </div>
       </div>
+<script src="js/aos.js">
 
+</script>
     <script type="text/javascript">
       $(".services-section").ripples({
         resolution:200,
         perturbance:0.003,
       });
+      AOS.init();
     </script>
   </body>
 </html>
