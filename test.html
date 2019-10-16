@@ -1,188 +1,382 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+
+<html>
+<head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <style media="screen">
-      *{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+
+  <link rel="stylesheet" href="css/aos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Livvic&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
       body{
-        background: #182C61;
-        background-size: cover;
+        background:white;
+      }
+.cover{
 
-      }
-      .container{
-        position:absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background:transparent;
-        box-sizing: border-box;
-        box-shadow: 0 0 30px rgba(0,0,0,.9);
-        width: 50%;
-        height: 90%;
-      }
-      .container h1{
-        position: absolute;
-        float: center;
-        margin-left: 33%;
-        margin-top: 20px;
-        font-family:Century gothic;
-        color: limegreen;
-        font-weight: bold;
-        transition: 0.3s;
+  position:absolute;
+    top:0;
+    left:0;
+  background: black;
+  height:100%;
+  width:100%;
+  opacity:0.5;
+  z-index:1;
 
-      }
-      h1 span{
-        color: white;
-      }
-      h1:hover{
-        transform: scaleX(1.1);
-      }
-      .border{
-    position: absolute;
-    margin-top: 80px;
-        width: 90%;
-        height: 5px;
-        margin-left: 20px;
-  background: limegreen;
-      }
-      .Login{
-        position: relative;
-        margin-top: 20%;
-      }
-    .Login input{
-      width: 70%;
-      height: 60px;
-      padding: 10px;
-      margin: 5% 10%;
-      border-radius: 20px;
-      font-size: 17px;
-      font-weight: bold;
-      font-family:Century gothic;
-      border: 2px solid black;
-      transition: 0.3s;
-        float: center;
-        animation: wide 0.3s;
-    }
-    @keyframes wide {
-      0%{
-        margin-left:0
-      }
-      20%{
-        margin-left:2%;
-      }
-      40%{
-          margin-left:4%;
-      }
-      60%{
-          margin-left:6%;
-      }
-      80%{
-          margin-left:8%
-      }
-      100%{
-          margin-left:10%;
-      }
-    }
-    .Login input[type="submit"]{
-      background: limegreen;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      float: left;
-      margin-left: 35%;
-      animation: fade 0.8s;
-    }
-    .Login input[type="submit"]:hover{
-      transform: scale(1.1);
-      color: limegreen;
-      background: white;
-    }
-    .Login input:hover{
-      transform: scaleX(1.2);
-      border:3px solid limegreen;
-    }
-    @keyframes fade {
-    0%{
-      transform: scale(1);
-    }
-    20%{
-        transform: scale(1);
-    }
-    40%{
-        transform: scale(1.2);
-    }
-    60%{
-        transform: scale(1.2);
-    }
-    80%{
-      transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-    }
-    @media screen and (max-width:960px) {
-      .container{
-        width: 80%;
-      }
-    }
 
-    @media screen and (max-width:768px) {
-      .input{
-        max-width: 80%;
-        margin-left:20px;
-      }
-    }
+}
+        .carousel {
+            font-family: century gothic;
+            height: 100%;
+        }
 
-    @media screen and (max-width:480px) {
-      .container{
-        width: 80%;
-      }
-      h1{
-        margin-right: 20%;
+            .carousel img {
 
-      }
-      .border{
-        margin-top: 100px;
-      }
-      .Login{
-        margin-top: 30%;
-      }
-      .Login input[type="submit"]{
-        width: 80px;
-        height: 80px;
-      }
-    }
-    @media screen and (max-width:360px) {
-      .Login{
-        margin-top: 50%;
-      }
+                width: 100%;
+                height: 100%;
 
-    }
+
+
+            }
+
+            .carousel .carousel-caption {
+
+
+            }
+
+                .carousel .carousel-caption h2 {
+                    font-size: 25px;
+                    margin-top: 200px;
+                    text-transform: uppercase;
+                    text-shadow:3px 2px  black;
+
+                }
+
+                .carousel .carousel-caption h3 {
+                    font-size: 20px;
+                    margin-bottom: 150px;
+                    text-shadow:3px 2px black;
+
+                }
+                .carousel .carousel-caption a{
+                  text-decoration:none;
+                  font-size:20px;
+
+                  font-family:Livvic;
+                  padding:20px 20px;
+
+                  width:50px;
+                  height:50px;
+                  border:2px solid #00FC23;
+                  background:transparent;
+                  color:white;
+                  transition:0.3s;
+                  box-shadow:0px 5px 15px rgba(0,0,0,.5);
+                }
+.carousel .carousel-caption a:hover{
+  background:#00FC23;
+}
+        h2 span {
+            color: #007cc0;
+        }
+
+
+        .header {
+            height: 100px;
+            background: black;
+            padding: 0 20px;
+            color: #fff;
+            opacity: 0.85;
+        }
+
+        .logo {
+            line-height: 100px;
+            float: left;
+            text-transform: uppercase;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            float: right;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: 0.4s;
+        }
+
+            .header a:hover {
+                background: #007cc0;
+                transform: scale(1.1);
+            }
+
+
+.services-section{
+  padding: 40px 0;
+
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.service-box{
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 90px;
+  background:transparent;
+
+}
+
+
+.service-box a{
+  text-decoration:none;
+  outline:none;
+}
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #1377FF;
+  color: #1377FF;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.2s linear;
+}
+
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  width:85px;
+  background: #1377FF;
+  color: white;
+
+}
+.service-box:hover .service-title{
+transform: scale(1.2);
+color:#1377FF;
+
+}
+.service-box:hover .service-desc{
+transform: scale(1.1);
+
+}
+.service-title{
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight:bold;
+  color:black;
+  font-family:Abel;
+  transition: 0.2s;
+
+}
+
+.service-desc{
+  font-size: 20px;
+  color:black;
+    font-family:Abel;
+
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+footer{
+  background:black;
+  width:100%;
+
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .service-box{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    width: 100%;
+  }
+}
+
     </style>
-  </head>
-  <body>
-    <div class="container">
-        <h1>login <span>Form</span></h1>
-        <div class="border">
+</head>
+<body>
+
+
+
+    <div id="demo" class="carousel slide " data-ride="carousel">
+        <!-- Indicators -->
+
+
+        <!-- The slideshow -->
+        <div class="carousel-inner section">
+            <div class="carousel-item active">
+
+              <img src="back.jpg">
+              <div class="cover">
+              </div>
+              <div class="carousel-caption">
+                <h2 class="bounceInLeft animated delay-1s">“Love yourself enough to live a healthy lifestyle”</h2>
+                <h3 class="bounceInRight animated delay-1s">Jim Rohn</h3>
+                <a href="#">Click Here</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img src="code121.jpg">
+                <div class="cover">
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="bounceInLeft animated delay-1s">“To keep the body in good health is a duty, otherwise we shall not be able to keep our mind strong and clear”</h2>
+                    <h3 class="bounceInRight animated delay-1s">Buddha</h3>
+                      <a href="#">Click Here</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="back2.jpg">
+                <div class="cover">
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="bounceInLeft animated delay-1s">“It is health that is real wealth and not pieces of gold and silver”</h2>
+                    <h3 class="bounceInRight animated delay-1s">Mahatma Gandhi</h3>
+                      <a href="#">Click Here</a>
+                </div>
+            </div>
+
         </div>
-      <div class="Login">
 
-        <form class="" action="index.html" method="post">
-
-          <input type="text" name="username" value="" placeholder="Username">
-          <input type="password" name="password" value="" placeholder="Password">
-          <input type="submit" name="" value="LOGIN">
-        </form>
-
-      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
-  </body>
+    <div class="services-section section">
+
+         <div class="inner-width">
+
+           <div class="services-container">
+
+             <div class="service-box zoomIn animated" data-aos="fade-down-left" data-aos-delay=150>
+               <a href="Profile.html">
+               <div class="service-icon">
+                 <i class="fas fa-user"></i>
+               </div></a>
+               <div class="service-title">Profile</div>
+               <div class="service-desc">
+    Information about me , My education journey , My hobbies</div>
+             </div>
+
+             <div class="service-box zoomIn animated delay-1s" data-aos="fade-down-right" data-aos-delay=150>
+               <a href="CodingSkills.html">
+               <div class="service-icon">
+               <i class="fas fa-code"></i>
+             </div></a>
+               <div class="service-title">Coding Skills</div>
+               <div class="service-desc">
+   Skills that i have wide knowledge in and improving everyday           </div>
+             </div>
+
+             <div class="service-box zoomIn animated delay-2s" data-aos="fade-down-left" data-aos-delay=150>
+               <a href="Projects.html">
+               <div class="service-icon">
+                 <i class="fas fa-keyboard"></i>
+               </div></a>
+               <div class="service-title">Latest Projects</div>
+               <div class="service-desc">
+                 A small preview about my latest projects and works
+               </div>
+             </div>
+
+
+             <div class="service-box zoomIn animated delay-3s" data-aos="fade-down-right" data-aos-delay=150>
+     <a href="Contact.html">
+               <div class="service-icon">
+               <i class="fas fa-envelope"></i>
+               </div></a>
+               <div class="service-title">Contact</div>
+               <div class="service-desc">
+                 Send me a message to my email and share me your thoughts
+               </div>
+             </div>
+
+             <div class="service-box zoomIn animated delay-4s" data-aos="fade-down-left" data-aos-delay=150>
+               <a href="gallery.html">
+               <div class="service-icon">
+                 <i class="fas fa-images"></i>
+             </div></a>
+               <div class="service-title">Gallery</div>
+               <div class="service-desc">
+                 A list of my own images
+               </div>
+             </div>
+
+
+           </div>
+         </div>
+       </div>
+
+   <script src="js/aos.js">
+   </script>
+
+
+
+       <script type="text/javascript">
+       AOS.init();
+
+         $(".services-section").ripples({
+           resolution:200,
+           perturbance:0.003,
+         });
+
+
+       </script>
+
+
+
+
+</body>
 </html>
