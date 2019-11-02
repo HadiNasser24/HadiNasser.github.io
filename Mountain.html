@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/aos.css">
+    <style media="screen">
+
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main{
+        height: 100vh;
+      }
+      nav{
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        opacity: 0;
+        margin-top:20px;
+        animation: fadein 1s 1s forwards;
+      }
+      @keyframes fadein {
+        100%{
+          margin-top: 0;
+          opacity: 1;
+        }
+
+      }
+      .title{
+        font-size: 20px;
+        font-family: century gothic;
+        padding: 20px;
+        color: white;
+        text-shadow: 0 2px 2px black;
+        letter-spacing: 1px;
+      }
+      .list{
+        padding: 20px;
+
+      }
+      .list a{
+        text-decoration: none;
+        font-family: century gothic;
+        color: white;
+        margin-right: 15px;
+        text-shadow: 0 2px 2px black;
+        letter-spacing: 1px;
+      }
+
+      .main img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: -1;
+      }
+      section .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 230px;
+        opacity:0;
+          animation: fadeincontent 1s 1.5s forwards;
+      }
+      @keyframes fadeincontent {
+        100%{
+          margin-top: 130px;
+          opacity: 1;
+        }
+
+      }
+       .content h1,h3{
+        color: white;
+        font-family: century gothic;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-shadow: 0 4px 2px black;
+      }
+      .content h3{
+        font-weight: 400;
+      }
+      .content a{
+        text-decoration: none;
+        color: white;
+        font-family: century gothic;
+        letter-spacing: 2px;
+        background: green;
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+        section .content a:hover{
+          transform: scale(1.1);
+          background: transparent;
+          color: green;
+          font-size: 17px;
+          font-weight: bold;
+          text-shadow: 0 3px 2px black;
+        }
+        .destinations{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .destinations .title h1 ,.packages .title h1,.contact .title h1,.testi h1{
+          color: #36363A;
+          text-shadow: none;
+          font-family: Staatliches;
+        }
+        .destinations .title p,.packages .title p,.contact .title p{
+          color:black;
+          text-shadow: none;
+          font-weight: 400;
+          font-family: montserrat;
+            line-height: 25px;
+        }
+        .destinations .title hr,.packages .title hr,.contact .title hr, .testi hr{
+          width: 40%;
+          height: 2px;
+          background: #000031;
+        }
+        .photos{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .photos img{
+          width: 360px;
+          height: 200px;
+          margin:20px;
+
+        }
+        .photos img:nth-child(1){
+          flex-basis: 20%;
+        }
+        .photos img:nth-child(2){
+          flex-basis: 60%;
+        }
+        .photos img:nth-child(3){
+          flex-basis: 60%;
+        }
+        .photos img:nth-child(4){
+          flex-basis: 20%;
+        }
+        .packages .title h1{
+          color: #36363A;
+          text-shadow: none;
+          font-family: Staatliches;
+        }
+        .packages{
+          background: #C4C4D0;
+        }
+        .packages .title{
+          text-align: center;
+        }
+        .contact .title{
+          text-align: center;
+          padding: 60px 150px;
+        }
+        .testi .title{
+          text-align: center;
+        }
+
+        .packages .container{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap:wrap;
+          padding:20px;
+        }
+        .pack{
+          flex-basis: 47%;
+        padding:10px;
+          text-align: center;
+          margin-top: 20px;
+
+          transition: 0.2s ease-in;
+        }
+        .pack i{
+          font-size: 40px;
+          color:#1813EF;
+        }
+        .pack h2{
+          font-family: Staatliches;
+        }
+        .pack p{
+          font-family: montserrat;
+        }
+        .pack:hover{
+          transform: scale(1.07);
+        }
+.contact{
+  background: #C4C4D0;
+}
+        .contact .form{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+        }
+        .contact .form input{
+         flex-basis: 60%;
+         font-family: century gothic;
+         color:black;
+
+         padding: 15px;
+         margin: 10px;
+        }
+
+.contact .form button{
+  font-family: century gothic;
+  color:white;
+  background: #000031;
+  padding: 15px;
+  text-transform: uppercase;
+  margin: 10px;
+  border:none;
+  outline:none;
+  transition: 0.2s ease-in;
+}
+.contact .form button:hover{
+  transform: scale(1.1);
+  color: #000031;
+  background:white;
+  font-weight: bold;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: Lato;
+  color: white;
+  background: #024D2E;
+  font-size: 12px;
+  flex-wrap: wrap;
+  padding: 5px;
+  text-align: center;
+}
+footer span{
+  margin: 10px;
+}
+.socials i{
+  font-size: 17px;
+  color: white;
+  margin: 15px;
+  transition: transform 0.4s ease-in;
+}
+.socials i:hover{
+  transform: rotateY(360deg);
+}
+.testi .container{
+  display: flex;
+  flex-direction: column;
+}
+.testi .container .testimonial {
+  text-align: center;
+  font-family: montserrat;
+  margin:25px 5px;
+  padding: 10px 120px;
+    color:#454746;
+}
+
+.testi .container .testimonial span{
+  font-weight: bold;
+}
+
+        @media screen and (max-width:720px){
+          .packages .container{
+            flex-direction: column;
+          }
+          .contact .title{
+            text-align: center;
+            padding: 60px 50px;
+          }
+          .testi .container .testimonial {
+
+            padding: 10px 20px;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+
+    <nav>
+      <div class="title">
+        Mountain Travel
+      </div>
+      <div class="list">
+        <a href="#">Tours</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </nav>
+    <section class="main">
+      <img src="images/mountains.jpg" alt="">
+      <div class="content">
+        <h1>Mountain Travel</h1>
+        <h3>Unmissable Adventure Tours Around The World</h3>
+        <a href="#">Contact Us Now</a>
+      </div>
+    </section>
+  </main>
+
+
+
+
+    <section class="destinations">
+      <div class="title" data-aos="fade-down" data-aos-delay=150>
+        <h1>Some Of Our Destinations</h1>
+        <p>Tired of the ocean?Are the planes too plain? Come along with us on one of our mountain adventures. Here are some pictures from peole who have had elevated experiences with us</p>
+        <hr></hr>
+      </div>
+        <div class="photos">
+<img src="images/mountain2.jpg" alt="" data-aos="fade-down" data-aos-delay=150>
+<img src="images/mountain3.jpg" alt="" data-aos="fade-down" data-aos-delay=150>
+<img src="images/mountain4.jpg" alt="" data-aos="fade-down" data-aos-delay=150>
+<img src="images/mountain5.jpg" alt="" data-aos="fade-down" data-aos-delay=150>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="packages">
+      <div class="title" data-aos="fade-down" data-aos-delay=150>
+        <h1>Tour Packages</h1>
+        <p>We offer a variety of mountaineering packages.Whether you've climbed Everest or don't even know what a mountain is, we've got the perfect vacation for you.</p>
+        <hr></hr>
+      </div>
+      <div class="container">
+        <div class="pack" data-aos="fade-down" data-aos-delay=150>
+          <i class="far fa-compass"></i>
+          <h2>Guided Trips</h2>
+          <p>Looking for the complete experience? Take a tour with one of our experts.They'll show you secrets that you're likely to miss otherwise.</p>
+        </div>
+        <div class="pack" data-aos="fade-down" data-aos-delay=150>
+          <i class="fas fa-camera-retro"></i>
+          <h2>Photo Trips</h2>
+          <p>Want to experience nature's beauty without all of that annoying exercise? Take a photo tour on one of our mountains buses.</p>
+        </div>
+        <div class="pack" data-aos="fade-down" data-aos-delay=150>
+          <i class="fas fa-camera-retro"></i>
+          <h2>Biking Trips</h2>
+          <p>If bicycles are more your speed,consider taking a tour through one of our mountain bike paths. We'll provide the bike,and lunch too!.</p>
+        </div>
+        <div class="pack" data-aos="fade-down" data-aos-delay=150>
+          <i class="fas fa-camera-retro"></i>
+          <h2>Racing Trips</h2>
+          <p>Got a competitive spirit? Sign up for one of our mountain marathons! Try to reach the summit before anyone else.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+<section class="testi">
+  <div class="title" data-aos="fade-down" data-aos-delay=150>
+    <h1>Tour Packages</h1>
+    <hr></hr>
+  </div>
+  <div class="container">
+    <div class="testimonial" data-aos="fade-down" data-aos-delay=150>
+      <p>Wow! This Tour made me realize how much i love mountains.After going on one of the tours,I can safely say that they are my favorite geographic feature,and my favorite word that starts with M.</p>
+      <span>-Colt Steel</span>
+    </div>
+    <div class="testimonial" data-aos="fade-down" data-aos-delay=150>
+      <p>Wow! This Tour made me realize how much i love mountains.After going on one of the tours,I can safely say that they are my favorite geographic feature,and my favorite word that starts with M.</p>
+      <span>-Ellie Schoppik</span>
+    </div>
+    <div class="testimonial" data-aos="fade-down" data-aos-delay=150>
+      <p>Wow! This Tour made me realize how much i love mountains.After going on one of the tours,I can safely say that they are my favorite geographic feature,and my favorite word that starts with M.</p>
+      <span>-Tim Garcia</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section class="contact">
+      <div class="title" data-aos="fade-down" data-aos-delay=150>
+        <h1>Learn More</h1>
+        <p>Want to know about our upcoming mountain-related events,or come to one of our mixers? Just sign up for our mailing list. No spam from us,we promise! Except for the spam we give you to keep up your energy while you're hiking through the mountains.We have tons of that</p>
+        <hr></hr>
+      </div>
+
+      <div class="form">
+        <input type="text" name="" placeholder="Email" value="">
+        <button type="submit" name="button">Subscribe now</button>
+      </div>
+    </section>
+    <footer>
+      <span>IMAGES COURTSEY OF UNSPLASH</span>
+      <span>WHY ARE YOU EVEN READING THIS?! THERE'S NEVER ANYTHING INTERESTING IN THE FOOTER</span>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script src="js/aos.js">
+ </script>
+ <script type="text/javascript">
+   AOS.init();
+ </script>
+  </body>
+</html>
